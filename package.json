@@ -3,7 +3,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "ANALYZE=true next build",
+    "bundle-check": "next build && bundlesize",
+    "lighthouse-dev":"URL='http://localhost:3000/' lhci autorun",
+    "lighthouse-prod":"URL='https://jorgeroldanbarrio.com/' lhci autorun"
   },
   "dependencies": {
     "date-fns": "^2.30.0",
@@ -13,5 +17,10 @@
     "react-dom": "18.2.0",
     "remark": "^14.0.3",
     "remark-html": "^15.0.2"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "@next/bundle-analyzer": "^13.4.4",
+    "bundlesize": "^0.18.1"
   }
 }

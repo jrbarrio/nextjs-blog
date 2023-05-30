@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Following performance tests from [Performance budget for Next.js](https://www.linkedin.com/pulse/performance-budget-nextjs-matias-daniel-torre/).
