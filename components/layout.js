@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Script from 'next/script';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
 
 const name = 'Jorge Roldan';
 export const siteTitle = "Jorge's blog";
@@ -26,23 +26,6 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
-      <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-FZNQKNCM4Q"
-          strategy="afterInteractive"
-      />
-      <div className="container">
-      <Script id="google-analytics" strategy="afterInteractive">
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-FZNQKNCM4Q');
-      `}
-      </Script>
-      </div> 
-
       <header className={styles.header}>
         {home ? (
           <>
