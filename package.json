@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "lint": "next lint",
     "build": "next build",
     "start": "next start",
     "analyze": "ANALYZE=true next build",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "@lhci/cli": "^0.12.0",
     "@next/bundle-analyzer": "^13.4.4",
-    "bundlesize": "^0.18.1"
+    "bundlesize": "^0.18.1",
+    "eslint": "8.52.0",
+    "eslint-config-next": "13.5.6"
   }
 }
